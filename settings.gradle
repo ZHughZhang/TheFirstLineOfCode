@@ -1,0 +1,3 @@
+rootProject.name = "TheFirstLineOfCode"
+include ':app'
+include ':partone'
