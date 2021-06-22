@@ -3,3 +3,8 @@
 /gradle.properties
 /local.properties
 /gradle/
+/buildSrc/.gradle/
+/buildSrc/build/
+/app/build/
+/partone/build/
+
