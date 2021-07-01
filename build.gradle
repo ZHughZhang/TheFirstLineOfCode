@@ -6,6 +6,7 @@ buildscript {
         VersionAndroidConfig.kotlin_version = '1.5.20'
         VersionAndroidConfig.kotlin_version = '1.5.20'
         VersionAndroidConfig.kotlin_version = '1.5.20'
+        VersionAndroidConfig.kotlin_version = '1.5.20'
     }
     repositories {
         google()
