@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:${VersionAndroidConfig.gradle_version}"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${VersionAndroidConfig.kotlin_version_plugin}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
         classpath "com.github.wuyr.incrementalcompiler:plugin:1.0.0"
     }
 }
@@ -23,6 +23,10 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+subprojects {
+    apply plugin: 'com.github.wuyr.incrementalcompiler'
+    apply plugin: 'kotlin-android-extensions'
 }
 subprojects {
     apply plugin: 'com.github.wuyr.incrementalcompiler'
